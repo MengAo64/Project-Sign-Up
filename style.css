@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #2386d6;
+}
+
+.kotak{
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0,0, 0.1);
+}
+.kotak .judul{
+    font-size: 35px;
+    font-weight: 600px;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    border-radius: 15px 15px 0 0 ;
+    background-color: #000000;
+}
+.kotak form{
+    padding: 10px 30px 50px;
+    background-color: #18f37b;
+}
+.kotak form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.kotak form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid rgb(138, 132, 132);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.kotak form .field input:focus,form .field input:valid{
+    border-color: #ff0000;
+}
+.kotak form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #0d3192;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+form .field input:focus ~ label ,  form .field input:valid ~ label {
+        top: 0px;
+        font-size: 16px;
+        color: #3402a8;
+        background: #18f37b;
+        transform: translateY(-50%);
+}
+form .content{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: space-around;
+}
+form .content .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .content input{
+    width: 15px;
+    height: 15px;
+    background: red;
+}
+form .content label{
+    color: #000000;
+    user-select: none;
+    padding-left: 5px;
+}
+form input{
+    background-color: #18f37b;
+}
+form .field input[type="submit"]{
+    color: #fff;
+    border: 3px solid rgb(255, 255, 255);
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg,);
+    transition: all 0.4s ease;
+    background-color: #585858;
+}
+form .field input[type="submit"]:hover{
+    border: 3px solid red;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg,);
+    background-color: #0c0a06;
+}
+form .field input[type="submit"]{
+    transform: scale(0.95);
+}
+
