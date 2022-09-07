@@ -106,7 +106,7 @@ form .field input[type="submit"]{
     cursor: pointer;
     background: linear-gradient(-135deg,);
     transition: all 0.4s ease;
-    background-color: #585858;
+    background-color: #535353;
 }
 form .field input[type="submit"]:hover{
     border: 3px solid red;
